@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MP3 Player</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/music.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/transform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="icon" href="./img/logo600.png" type="image/x-icon"/>
+</head>
+<!-- Phần 4 < 11:40 -->
+
+<body>
+    <div class="main">
+        <div class="music">
+            <div class="music_block">
+                <div class="music_image">
+                    <img src="./img/thuong em den gia.jpg" alt="Chua co anh" class="music_image_img switch">
+                </div>
+                <div class="music_title">
+                    <!-- <h1>Thương em đến già</h1> -->
+                    <h2>Thương em đến già</h2>
+                </div>
+                <div class="music_author">
+                    <!-- <p>Lê Bảo Bình</p> -->
+                    <h5>Lê Bảo Bình</h5>
+                </div>
+                <input type="range" name="" id="music_task">
+                <audio src="./music/Thuong Em Den Gia - Le Bao Binh.mp3" id="song"></audio>
+                <div class="music_timer">
+                    <span class="music_timer_remain">-2:10</span>
+                    <span class="music_timer_duration">2:10</span>
+                    <div class="clear"></div>
+                </div>
+                <div class="music_controls">
+                    <a href="#">
+                        <span>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="backward music_controls_move--modifier">
+                            <i class="fa-solid fa-backward"></i>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="pack">
+                            <i class="fa-solid fa-play"></i>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="forward music_controls_move--modifier">
+                            <i class="fa-solid fa-forward"></i>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <ul class="list_members">
+                <li class="list_member">
+                    <span class="list_member_order">01</span>
+                    <img src="./img/thuong em den gia.jpg" alt="Thương em đến già" class="list_member_img">
+                    <span class="list_member_status">
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+                    <div class="list_member_info">
+                        <div class="list_member_info_song">Thương em đến già</div>
+                        <div class="list_member_info_author">Lê Bảo Bình</div>
+                    </div>
+                    <span class="list_member_quantity">04:31</span>
+                </li>
+                <li class="list_member">
+                    <span class="list_member_order">02</span>
+                    <img src="./img/payphone.jpg" alt="Payphone" class="list_member_img">
+                    <span class="list_member_status">
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+                    <div class="list_member_info">
+                        <div class="list_member_info_song">Payphone</div>
+                        <div class="list_member_info_author">Maroon 5</div>
+                    </div>
+                    <span class="list_member_quantity">03:51</span>
+                </li>
+                <li class="list_member">
+                    <span class="list_member_order">03</span>
+                    <img src="./img/ngay ay ban va toi.jpg" alt="Ngày ấy bạn và tôi" class="list_member_img">
+                    <span class="list_member_status">
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+                    <div class="list_member_info">
+                        <div class="list_member_info_song">Ngày ấy bạn và tôi</div>
+                        <div class="list_member_info_author">Lynk Lee</div>
+                    </div>
+                    <span class="list_member_quantity">05:18</span>
+                </li>
+                <li class="list_member">
+                     <span class="list_member_order">04</span>
+                    <img src="./img/tam biet nhe.jpg" alt="Tạm biệt nhé" class="list_member_img">
+                    <span class="list_member_status">
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+                    <div class="list_member_info">
+                        <div class="list_member_info_song">Tạm biệt nhé</div>
+                        <div class="list_member_info_author">Lynk Lee</div>
+                    </div>
+                    <span class="list_member_quantity">04:47</span>
+                </li>
+                <li class="list_member">
+                     <span class="list_member_order">05</span>
+                    <img src="./img/buong doi tay nhau ra.jpg" alt="Buông đôi tay nhau ra" class="list_member_img">
+                    <span class="list_member_status">
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+                    <div class="list_member_info">
+                        <div class="list_member_info_song">Buông đôi tay nhau ra</div>
+                        <div class="list_member_info_author">Sơn Tùng M-TP</div>
+                    </div>
+                    <span class="list_member_quantity">03:45</span>
+                </li>
+                <li class="list_member">
+                     <span class="list_member_order">06</span>
+                    <img src="./img/dong van.jpg" alt="Đông Vân" class="list_member_img">
+                    <span class="list_member_status">
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+                    <div class="list_member_info">
+                        <div class="list_member_info_song">Đông Vân</div>
+                        <div class="list_member_info_author">Hương Ly</div>
+                    </div>
+                    <span class="list_member_quantity">03:55</span>
+                </li>
+                <li class="list_member">
+                    <span class="list_member_order">07</span>
+                   <img src="./img/nam moi binh an.jpg" alt="Năm mới bình an" class="list_member_img">
+                   <span class="list_member_status">
+                       <i class="fa-solid fa-play"></i>
+                   </span>
+                   <div class="list_member_info">
+                       <div class="list_member_info_song">Năm mới bình an</div>
+                       <div class="list_member_info_author">Sơn Tùng M-TP</div>
+                   </div>
+                   <span class="list_member_quantity">04:08</span>
+               </li>
+               <li class="list_member">
+                    <span class="list_member_order">08</span>
+                    <img src="./img/Lien hoa.jpg" alt="Liên Hoa" class="list_member_img">
+                    <span class="list_member_status">
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+                    <div class="list_member_info">
+                        <div class="list_member_info_song">Liên Hoa</div>
+                        <div class="list_member_info_author">Phương Mỹ Chi</div>
+                    </div>
+                    <span class="list_member_quantity">04:28</span>
+                </li>
+                <li class="list_member">
+                    <span class="list_member_order">09</span>
+                    <img src="./img/Chi-Muon-Ben-Em-Luc-Nay-Huy-Vac-ft-Jiki-X.jpg" alt="Chỉ muốn bên em lúc này" class="list_member_img">
+                    <span class="list_member_status">
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+                    <div class="list_member_info">
+                        <div class="list_member_info_song">Chỉ muốn bên em lúc này</div>
+                        <div class="list_member_info_author">Jiki & Huy Vạc</div>
+                    </div>
+                    <span class="list_member_quantity">04:03</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./music.js"></script>
+</body>
+
+</html>

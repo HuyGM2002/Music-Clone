@@ -1,0 +1,83 @@
+/* Môi trường Tablet */
+@media  (max-width : 820px){
+    /* *{
+        font-size: 13px; ====> Hỏi 
+    } */
+    body{
+        font-size: 13px;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .music{
+        width: 450px;
+        margin-bottom: 20px;
+    }
+    .music_block{
+        padding: 0 40px;
+    }
+    .music_image_img{
+        width: 150px;
+        height: 150px;
+    }
+    .music_title{
+        font-size: 13px;
+    }
+    .music_author{
+        font-size: 18px;
+    }
+    .music_timer{
+        font-size: 13px;
+    }
+    .music_controls{
+        padding: 30px 0;
+    }
+    .music_controls a span{
+        font-size: 19px;
+    }
+    .pack{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 10px;
+    }
+    .pack .fa-solid{
+        font-size: 25px;
+        position: absolute;
+        left: 36%;
+        transform: translateY(30%);
+    }
+    .list{
+        width: 450px;
+    }
+    .list_members{
+        padding-right: 0;
+    }
+    .list_member_quantity{
+        margin-left: 50px;
+    }
+    .list_members::-webkit-scrollbar{
+       display: none;
+    } 
+}
+
+
+
+
+/* Môi Trường Mobile */
+@media (max-width : 414px ){
+    .main{
+        padding: 10px;
+    }
+    .music{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .list{
+        width: 100%;
+        border-radius: 10px;
+    }
+}

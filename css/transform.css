@@ -1,0 +1,11 @@
+@keyframes spinner{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Diverse{
+    to{
+        transform: rotate(-360deg);    
+    }
+}

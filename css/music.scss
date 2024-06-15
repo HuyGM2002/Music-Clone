@@ -1,0 +1,14 @@
+@mixin size($width , $height) {
+    width: $width;
+    height: $height;
+}
+.music{
+    @include size(560px);
+    &_image{
+        &_img{
+            padding-left: 90px;
+            padding-right: 90px;
+            padding-bottom: 30px; 
+        }
+    }
+}
